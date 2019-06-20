@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B699A6522BC3C2F0056D04B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A6422BC3C2F0056D04B /* main.swift */; };
 		9B699A6C22BC3C740056D04B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A6B22BC3C740056D04B /* Customer.swift */; };
+		9B699A7022BC42500056D04B /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A6F22BC42500056D04B /* Bill.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,7 @@
 		9B699A6122BC3C2F0056D04B /* C0753362_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0753362_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B699A6422BC3C2F0056D04B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B699A6B22BC3C740056D04B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		9B699A6F22BC42500056D04B /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,19 @@
 		9B699A6322BC3C2F0056D04B /* C0753362_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
+				9B699A6E22BC42400056D04B /* bill */,
 				9B699A6422BC3C2F0056D04B /* main.swift */,
 				9B699A6B22BC3C740056D04B /* Customer.swift */,
 			);
 			path = C0753362_MID_TERM_MAD3004;
+			sourceTree = "<group>";
+		};
+		9B699A6E22BC42400056D04B /* bill */ = {
+			isa = PBXGroup;
+			children = (
+				9B699A6F22BC42500056D04B /* Bill.swift */,
+			);
+			path = bill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B699A6522BC3C2F0056D04B /* main.swift in Sources */,
+				9B699A7022BC42500056D04B /* Bill.swift in Sources */,
 				9B699A6C22BC3C740056D04B /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
