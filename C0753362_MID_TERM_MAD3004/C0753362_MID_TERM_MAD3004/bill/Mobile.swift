@@ -12,12 +12,12 @@ class Mobile: Bill {
     var manufacturerName : String
     var mobilePlanName:String
     var mobileNumber : Int
-    var internetUsed : String
-    var minutesUsed : String
+    var internetUsed : Float
+    var minutesUsed : Float
     
     
     init(billId: Int, billDate: Date, billType: String ,billAmount : Float , manufacturerName : String ,
-         mobilePlanName : String,mobileNumber : Int , internetUsed : String , minutesUsed : String) {
+         mobilePlanName : String,mobileNumber : Int , internetUsed : Float , minutesUsed : Float) {
         
         self.manufacturerName = manufacturerName
         self.mobilePlanName = mobilePlanName
@@ -31,8 +31,8 @@ class Mobile: Bill {
         print("Manufacturer: \(manufacturerName)\n" +
             "Plan Name: \(mobilePlanName)\n" +
             "Mobile Number: \(mobileNumber)" + // because we are working only on the project of that is being served in canada.
-            "Internet Usage: \(internetUsed)\n" +
-            "Minutes Usage: \(minutesUsed)\n")
+            "Internet Usage: \(internetUsed.internetUnit())\n" +
+            "Minutes Usage: \(minutesUsed.minutesUnits())\n")
     }
 }
 
