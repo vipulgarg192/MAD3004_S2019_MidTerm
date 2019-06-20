@@ -12,7 +12,7 @@ class Internet: Bill {
     var providerName : String
     var internetUsage : String
     
-    override init(billId: Int, billDate: Date, billType: String ,
+     init(billId: Int, billDate: Date, billType: String ,
                   providerName : String , internetUsage : String) {
     
         self.providerName = providerName
