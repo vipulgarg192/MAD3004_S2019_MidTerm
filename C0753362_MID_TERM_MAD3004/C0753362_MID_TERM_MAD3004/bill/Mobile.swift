@@ -26,6 +26,13 @@ class Mobile: Bill {
         self.minutesUsed = minutesUsed
         super.init(billId: billId, billDate: billDate , billType : billType , billAmount : billAmount)
     }
-        
+    
+    override func Display() {
+        print("Manufacturer: \(manufacturerName)\n" +
+            "Plan Name: \(mobilePlanName)\n" +
+            "Mobile Number: \(mobileNumber)" + // because we are working only on the project of that is being served in canada.
+            "Internet Usage: \(internetUsed)\n" +
+            "Minutes Usage: \(minutesUsed)\n")
+    }
 }
 
