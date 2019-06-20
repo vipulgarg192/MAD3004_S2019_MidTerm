@@ -24,8 +24,6 @@ class Mobile: Bill {
         self.minutesUsed = minutesUsed
         super.init(billId: billId, billDate: billDate , billType : billType)
     }
-    
-
-    
+        
 }
 
