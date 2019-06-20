@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9B699A6522BC3C2F0056D04B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A6422BC3C2F0056D04B /* main.swift */; };
-		9B699A6C22BC3C740056D04B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A6B22BC3C740056D04B /* Customer.swift */; };
 		9B699A7022BC42500056D04B /* Bill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A6F22BC42500056D04B /* Bill.swift */; };
 		9B699A7222BC43320056D04B /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A7122BC43320056D04B /* Mobile.swift */; };
 		9B699A7422BC455A0056D04B /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A7322BC455A0056D04B /* Internet.swift */; };
 		9B699A7622BC45F60056D04B /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A7522BC45F60056D04B /* Hydro.swift */; };
+		9B699A7922BC46C60056D04B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B699A7822BC46C60056D04B /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,11 +30,11 @@
 /* Begin PBXFileReference section */
 		9B699A6122BC3C2F0056D04B /* C0753362_MID_TERM_MAD3004 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = C0753362_MID_TERM_MAD3004; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B699A6422BC3C2F0056D04B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		9B699A6B22BC3C740056D04B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		9B699A6F22BC42500056D04B /* Bill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bill.swift; sourceTree = "<group>"; };
 		9B699A7122BC43320056D04B /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		9B699A7322BC455A0056D04B /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		9B699A7522BC45F60056D04B /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		9B699A7822BC46C60056D04B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +67,9 @@
 		9B699A6322BC3C2F0056D04B /* C0753362_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
+				9B699A7722BC46B30056D04B /* customer */,
 				9B699A6E22BC42400056D04B /* bill */,
 				9B699A6422BC3C2F0056D04B /* main.swift */,
-				9B699A6B22BC3C740056D04B /* Customer.swift */,
 			);
 			path = C0753362_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -83,6 +83,14 @@
 				9B699A7522BC45F60056D04B /* Hydro.swift */,
 			);
 			path = bill;
+			sourceTree = "<group>";
+		};
+		9B699A7722BC46B30056D04B /* customer */ = {
+			isa = PBXGroup;
+			children = (
+				9B699A7822BC46C60056D04B /* Customer.swift */,
+			);
+			path = customer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +151,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B699A6522BC3C2F0056D04B /* main.swift in Sources */,
+				9B699A7922BC46C60056D04B /* Customer.swift in Sources */,
 				9B699A7022BC42500056D04B /* Bill.swift in Sources */,
-				9B699A6C22BC3C740056D04B /* Customer.swift in Sources */,
 				9B699A7222BC43320056D04B /* Mobile.swift in Sources */,
 				9B699A7622BC45F60056D04B /* Hydro.swift in Sources */,
 				9B699A7422BC455A0056D04B /* Internet.swift in Sources */,

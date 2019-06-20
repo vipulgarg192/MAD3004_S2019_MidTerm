@@ -15,14 +15,14 @@ class Mobile: Bill {
     var minutesUsed : String
     
     
-    init(billId: Int, billDate: Date, billType: String , manufacturerName : String ,
+    init(billId: Int, billDate: Date, billType: String ,billAmount : Float , manufacturerName : String ,
                   mobileNumber : Int , internetUsed : String , minutesUsed : String) {
         
         self.manufacturerName = manufacturerName
         self.mobileNumber = mobileNumber
         self.internetUsed = internetUsed
         self.minutesUsed = minutesUsed
-        super.init(billId: billId, billDate: billDate , billType : billType)
+        super.init(billId: billId, billDate: billDate , billType : billType , billAmount : billAmount)
     }
         
 }

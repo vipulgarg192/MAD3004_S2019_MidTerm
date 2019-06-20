@@ -12,12 +12,14 @@ class Bill{
     let billId : Int
     var billDate : Date
     var billType : String
+    var billAmount : Float
     
     
-    init(billId : Int , billDate : Date , billType : String) {
+    init(billId : Int , billDate : Date , billType : String , billAmount : Float) {
         self.billId = billId
         self.billDate = billDate
         self.billType = billType
+        self.billAmount = billAmount
     }
     
 }
