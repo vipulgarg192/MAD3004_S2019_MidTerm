@@ -10,14 +10,18 @@ import Foundation
 
 class Internet: Bill {
     var providerName : String
-    var internetUsage : String
+    var internetUsage : Float
     
     init(billId: Int, billDate: Date, billType: String , billAmount : Float ,
-                  providerName : String , internetUsage : String) {
+                  providerName : String , internetUsage : Float) {
     
         self.providerName = providerName
         self.internetUsage = internetUsage
         super.init(billId: billId, billDate: billDate, billType: billType , billAmount : billAmount)
+    }
+    
+    override func Display() {
+        print("Provider Name: \(providerName) \n " + "Internet Usage: \(internetUsage.internetUnit())\n")
     }
     
 }
