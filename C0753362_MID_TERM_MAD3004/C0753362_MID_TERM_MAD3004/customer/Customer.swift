@@ -19,6 +19,8 @@ class Customer : IDisplay{
     var customerEmail : String
     var arrayBill : [Bill]
     
+    static var dictBills = [Int:Bill]()
+    
     
     var totalBill : Int{
         var bill = 00
@@ -42,6 +44,12 @@ class Customer : IDisplay{
         print("CustomerId: \(customerId) \n " + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
         print("Bill Information")
     }
+    
+    
+    static func addBills(bill : Bill){
+        dictBills.updateValue(bill, forKey: bill.billId)
+    }
+    
 }
 
 

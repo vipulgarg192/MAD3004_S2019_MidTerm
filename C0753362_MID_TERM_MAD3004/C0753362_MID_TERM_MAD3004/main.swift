@@ -25,6 +25,7 @@ var bill7 = Hydro(billId: 7, billDate: Date(),billType: "Hydro" , billAmount: 95
 // creating customers
 var customer1 = Customer(customerId: 1, firstName: "Vipul" , lastName: "Garg", email: "Vipul@gmail.com", arrayOfBills: [bill1,bill4,bill6])
 
+customer1.displayData()
 
 
 
