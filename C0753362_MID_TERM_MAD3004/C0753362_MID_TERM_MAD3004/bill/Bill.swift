@@ -22,7 +22,7 @@ class Bill : IDisplay{
         self.billAmount = billAmount
     }
     
-    func Display() {
+    func displayData() {
         print("Bill ID: \(billId)\n" +
             "Bill Date: \(billDate)\n" +
             "Bill Type: \(billType)\n")

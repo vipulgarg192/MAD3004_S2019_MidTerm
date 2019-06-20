@@ -22,5 +22,15 @@ var bill6 = Hydro(billId: 6, billDate: Date(),billType: "Hydro" , billAmount: 55
 
 var bill7 = Hydro(billId: 7, billDate: Date(),billType: "Hydro" , billAmount: 95.5 , agencyName: "Lambton Collage" , unitConsumed: 59)
 
+// creating customers
+var customer1 = Customer(customerId: 1, firstName: "Vipul" , lastName: "Garg", email: "Vipul@gmail.com", arrayOfBills: [bill1,bill4,bill6])
 
 
+
+
+//CREATING ORDER 1
+//var order1:Order = Order.init(orderId: 1, orderDate: Date(), arrayProducts: [p1,p2,p3])
+//order1.printDetails()
+//
+////Add Order to Dictionary
+//Order.addOrder(order: order1)

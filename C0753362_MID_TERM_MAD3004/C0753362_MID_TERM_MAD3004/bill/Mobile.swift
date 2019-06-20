@@ -27,7 +27,7 @@ class Mobile: Bill {
         super.init(billId: billId, billDate: billDate , billType : billType , billAmount : billAmount)
     }
     
-    override func Display() {
+    override func displayData() {
         print("Manufacturer: \(manufacturerName)\n" +
             "Plan Name: \(mobilePlanName)\n" +
             "Mobile Number: \(mobileNumber)" + // because we are working only on the project of that is being served in canada.

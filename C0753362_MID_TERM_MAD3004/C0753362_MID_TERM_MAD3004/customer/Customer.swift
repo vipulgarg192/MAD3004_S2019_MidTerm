@@ -8,7 +8,8 @@
 
 import Foundation
 
-class Customer {
+class Customer : IDisplay{
+   
     var customerId : Int
     var customerFirstName : String
     var customerLastName : String
@@ -35,6 +36,11 @@ class Customer {
         self.customerLastName = lastName
         self.customerEmail = email
         self.arrayBill = arrayOfBills
+    }
+    
+     func displayData() {
+        print("CustomerId: \(customerId) \n " + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
+        print("Bill Information")
     }
 }
 

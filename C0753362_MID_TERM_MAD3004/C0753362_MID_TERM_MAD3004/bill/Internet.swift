@@ -20,7 +20,7 @@ class Internet: Bill {
         super.init(billId: billId, billDate: billDate, billType: billType , billAmount : billAmount)
     }
     
-    override func Display() {
+    override func displayData() {
         print("Provider Name: \(providerName) \n " + "Internet Usage: \(internetUsage.internetUnit())\n")
     }
     

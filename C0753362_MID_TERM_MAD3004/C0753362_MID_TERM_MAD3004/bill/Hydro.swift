@@ -19,6 +19,10 @@ class Hydro: Bill {
         self.unitConsumed = unitConsumed
         super.init(billId: billId, billDate: billDate, billType: billType , billAmount : billAmount)
     }
+    override func displayData() {
+        print("Agency Name: \(agencyName) \n " + "Unit Consumed: \(unitConsumed.UnitHyrdoConvert())\n")
+    }
+    
     
 }
 
