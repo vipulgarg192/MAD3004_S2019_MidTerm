@@ -73,6 +73,7 @@
 		9B699A6322BC3C2F0056D04B /* C0753362_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
+				9B699A7722BC46B30056D04B /* Model */,
 				9B699A7F22BC4BDE0056D04B /* extenstions */,
 				9B699A7B22BC49B50056D04B /* protocol */,
 				9B699A6E22BC42400056D04B /* bill */,
@@ -92,18 +93,17 @@
 			path = bill;
 			sourceTree = "<group>";
 		};
-		9B699A7722BC46B30056D04B /* customer */ = {
+		9B699A7722BC46B30056D04B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9B699A7822BC46C60056D04B /* Customer.swift */,
 			);
-			path = customer;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9B699A7B22BC49B50056D04B /* protocol */ = {
 			isa = PBXGroup;
 			children = (
-				9B699A7722BC46B30056D04B /* customer */,
 				9B699A7C22BC49C90056D04B /* IDisplay.swift */,
 			);
 			path = protocol;
