@@ -21,7 +21,13 @@ class Internet: Bill {
     }
     
     override func displayData() {
-        print("Provider Name: \(providerName) \n " + "Internet Usage: \(internetUsage.internetUnit())\n")
+        print("\n")
+        print("BillId: \(billId)")
+        print("BillDate: \(billDate)")
+        print("BillType: \(billType)")
+        print("BillAmount: \(billAmount.dollorConvertion())")
+        print("Provider Name: \(providerName)\n" + "Internet Usage: \(internetUsage.internetUnit())\n")
+        print("************************************************")
     }
     
 }
