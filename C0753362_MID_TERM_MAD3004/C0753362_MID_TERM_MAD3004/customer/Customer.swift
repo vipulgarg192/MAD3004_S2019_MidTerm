@@ -14,12 +14,12 @@ class Customer : IDisplay{
     var customerFirstName : String
     var customerLastName : String
     var fullName : String{
-        return "\(customerFirstName ), \(customerLastName)"
+        return "\(customerFirstName ) \(customerLastName)"
     }
     var customerEmail : String
     var arrayBill : [Bill]
     
-    static var dictBills = [Int:Bill]()
+    static var dictBills = [Int:Customer]()
     
     
     var totalBill : Int{
@@ -41,13 +41,20 @@ class Customer : IDisplay{
     }
     
      func displayData() {
-        print("CustomerId: \(customerId) \n " + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
-        print("Bill Information")
+        print("CustomerId: \(customerId)\n " + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
+        print("        Bill Information      ")
+        print("******************************")
+        
+        for b in arrayBill {
+            if (b is Hydro){
+                b.displayData()
+            }
+        }
     }
     
     
-    static func addBills(bill : Bill){
-        dictBills.updateValue(bill, forKey: bill.billId)
+    static func addCustomers(customer : Customer){
+        dictBills.updateValue(customer, forKey: customer.customerId)
     }
     
 }
