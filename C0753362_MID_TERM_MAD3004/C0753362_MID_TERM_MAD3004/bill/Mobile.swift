@@ -39,7 +39,7 @@ class Mobile: Bill {
             "\tInternet Usage: \(internetUsed.internetUnit())\n" +
             "\tMinutes Usage: \(minutesUsed.minutesUnits())\n")
         
-        print("************************************************")
+        print("\t************************************************")
         
         
     }

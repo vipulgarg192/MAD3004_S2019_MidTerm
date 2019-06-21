@@ -22,13 +22,13 @@ class Customer : IDisplay{
     static var dictBills = [Int:Customer]()
     
     
-    var totalBill : Int{
-        var bill = 00
+    var totalBill : Float{
+        var bill = 00.00
         
         for a in arrayBill{
-            bill = bill + Int(Double(a.billAmount))
+            bill = bill + Double(a.billAmount)
         }
-        return bill
+        return Float(bill)
     }
     
     
@@ -44,7 +44,8 @@ class Customer : IDisplay{
      func displayData() {
         print("\n\n")
         print("CustomerId: \(customerId)\n" + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
-        print("\t        Bill Information      ")
+         print("\t******************************")
+        print("\t        Bill Informations      ")
         print("\t******************************")
         
         for b in arrayBill {
@@ -59,7 +60,8 @@ class Customer : IDisplay{
             }
         }
         
-        print("")
+        print("\t\t\t\tTotal Amount to Pay: \(totalBill.dollorConvertion())")
+        print("\t************************************************")
     }
     
     

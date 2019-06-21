@@ -26,7 +26,7 @@ class Internet: Bill {
         print("\tBillType: \(billType)")
         print("\tBillAmount: \(billAmount.dollorConvertion())")
         print("\tProvider Name: \(providerName)\n" + "\tInternet Usage: \(internetUsage.internetUnit())\n")
-        print("************************************************")
+        print("\t************************************************")
     }
     
 }
