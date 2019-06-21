@@ -41,12 +41,15 @@ class Customer : IDisplay{
     }
     
      func displayData() {
-        print("CustomerId: \(customerId)\n " + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
+        print("CustomerId: \(customerId)\n" + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
         print("        Bill Information      ")
         print("******************************")
         
         for b in arrayBill {
             if (b is Hydro){
+                b.displayData()
+            }
+            if(b is Mobile){
                 b.displayData()
             }
         }

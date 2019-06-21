@@ -18,4 +18,8 @@ extension Float{
         return "\(self) minutes"
     }
     
+    func dollorConvertion() -> String {
+        return "$\(self)"
+    }
+    
 }
