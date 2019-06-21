@@ -29,7 +29,7 @@ customer1.displayData()
 Customer.addCustomers(customer:  customer1)
 
 
-var customer2 = Customer(customerId: 2, firstName: "Raj" , lastName: "Kaur", email: "Raj@gmail.com", arrayOfBills: [bill2,bill3,bill7])
+var customer2 = Customer(customerId: 2, firstName: "Raj" , lastName: "Kaur", email: "Raj@gmail.com", arrayOfBills: [bill2,bill3,bill6])
 
 customer2.displayData()
 Customer.addCustomers(customer:  customer2)
@@ -38,10 +38,18 @@ Customer.addCustomers(customer:  customer2)
 var customer3 = Customer(customerId: 3, firstName: "Shivani" , lastName: "Dhiman", email: "Shivani@gmail.com", arrayOfBills: [bill1,bill3])
 
 customer3.displayData()
-Customer.addCustomers(customer:  customer2)
+Customer.addCustomers(customer:  customer3)
 
 
 var customer4 = Customer(customerId: 4, firstName: "Kishore" , lastName: "Narang", email: "KN@gmail.com", arrayOfBills: [bill6 ,bill7])
 
 customer4.displayData()
 Customer.addCustomers(customer:  customer4)
+
+
+Customer.sortCustomerUsingTotal()
+
+Customer.getCustomerByCustomerId(customerId: 1)
+Customer.getCustomerByCustomerId(customerId: 9)
+
+print("\n\n\n")

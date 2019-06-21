@@ -75,7 +75,6 @@
 			children = (
 				9B699A7F22BC4BDE0056D04B /* extenstions */,
 				9B699A7B22BC49B50056D04B /* protocol */,
-				9B699A7722BC46B30056D04B /* customer */,
 				9B699A6E22BC42400056D04B /* bill */,
 				9B699A6422BC3C2F0056D04B /* main.swift */,
 			);
@@ -104,6 +103,7 @@
 		9B699A7B22BC49B50056D04B /* protocol */ = {
 			isa = PBXGroup;
 			children = (
+				9B699A7722BC46B30056D04B /* customer */,
 				9B699A7C22BC49C90056D04B /* IDisplay.swift */,
 			);
 			path = protocol;

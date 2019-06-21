@@ -19,7 +19,7 @@ class Customer : IDisplay{
     var customerEmail : String
     var arrayBill : [Bill]
     
-    static var dictBills = [Int:Customer]()
+    static var dictCustomers = [Int:Customer]()
     
     
     var totalBill : Float{
@@ -40,7 +40,7 @@ class Customer : IDisplay{
         self.arrayBill = arrayOfBills
     }
     
-    // this will display data of a customer
+   
      func displayData() {
         print("\n\n")
         print("CustomerId: \(customerId)\n" + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
@@ -64,11 +64,41 @@ class Customer : IDisplay{
         print("\t************************************************")
     }
     
-    
-    static func addCustomers(customer : Customer){
-        dictBills.updateValue(customer, forKey: customer.customerId)
+    func displayNameSortedByTotal() {
+        
+      print("CustomerId: \(customerId)\n" + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
+        print("Total Amount to Pay: \(totalBill.dollorConvertion())")
+        print("\t************************************************")
     }
     
+    
+    static func addCustomers(customer : Customer){
+        dictCustomers.updateValue(customer, forKey: customer.customerId)
+    }
+    
+    static func sortCustomerUsingTotal() {
+        print("")
+        print("Customer details in ascending order with respect to total bill to be paid\n")
+        let customers = dictCustomers.sorted(by: {a,b in
+            return a.value.totalBill > b.value.totalBill
+        })
+        
+        for newList in customers{
+            newList.value.displayNameSortedByTotal()
+        }
+    }
+    
+   static func getCustomerByCustomerId(customerId : Int)  {
+    print("")
+        if let customer = dictCustomers[customerId] {
+            print("\t\tDetails of Customer whose id is: \(customerId)")
+            print("\t\tCustomer Name is: \(customer.fullName)")
+            print("\t\tCustomer Email is: \(customer.customerEmail)")
+        }else {
+             print("\t\tThere is no customer with id: \(customerId)")
+        }
+    }
 }
+
 
 
