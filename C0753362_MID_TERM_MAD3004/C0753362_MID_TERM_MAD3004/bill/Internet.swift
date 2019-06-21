@@ -21,7 +21,6 @@ class Internet: Bill {
     }
     
     override func displayData() {
-        print("\n")
         print("BillId: \(billId)")
         print("BillDate: \(billDate)")
         print("BillType: \(billType)")

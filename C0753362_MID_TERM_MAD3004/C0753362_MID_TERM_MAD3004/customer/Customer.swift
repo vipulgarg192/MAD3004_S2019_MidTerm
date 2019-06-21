@@ -49,7 +49,10 @@ class Customer : IDisplay{
             if (b is Hydro){
                 b.displayData()
             }
-            if(b is Mobile){
+            else if(b is Mobile){
+                b.displayData()
+            }
+            else if (b is Internet){
                 b.displayData()
             }
         }
