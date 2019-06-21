@@ -40,6 +40,7 @@ class Customer : IDisplay{
         self.arrayBill = arrayOfBills
     }
     
+    // this will display data of a customer
      func displayData() {
         print("CustomerId: \(customerId)\n" + "Custome Name: \(fullName)\n" + "Customer Email: \(customerEmail)")
         print("        Bill Information      ")

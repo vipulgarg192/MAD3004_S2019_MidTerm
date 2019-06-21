@@ -29,10 +29,19 @@ customer1.displayData()
 Customer.addCustomers(customer:  customer1)
 
 
+var customer2 = Customer(customerId: 2, firstName: "Raj" , lastName: "Kaur", email: "Raj@gmail.com", arrayOfBills: [bill2,bill3,bill7])
 
-//CREATING ORDER 1
-//var order1:Order = Order.init(orderId: 1, orderDate: Date(), arrayProducts: [p1,p2,p3])
-//order1.printDetails()
-//
-////Add Order to Dictionary
-//Order.addOrder(order: order1)
+customer2.displayData()
+Customer.addCustomers(customer:  customer2)
+
+
+var customer3 = Customer(customerId: 3, firstName: "Shivani" , lastName: "Dhiman", email: "Shivani@gmail.com", arrayOfBills: [bill1,bill3])
+
+customer3.displayData()
+Customer.addCustomers(customer:  customer2)
+
+
+var customer4 = Customer(customerId: 4, firstName: "Kishore" , lastName: "Narang", email: "KN@gmail.com", arrayOfBills: [bill6 ,bill7])
+
+customer4.displayData()
+Customer.addCustomers(customer:  customer4)
